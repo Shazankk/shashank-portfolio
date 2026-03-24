@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shazankk.github.io/shashank-portfolio",
+  "homepage": "https://shazankk.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -r https://github.com/shazankk/shazankk.github.io.git -b main",
     "lint": "eslint .",
     "preview": "vite preview"
   },
