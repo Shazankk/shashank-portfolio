@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Goud - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #070d1f;
+            --surface: #11192e;
+            --primary: #00f1fe;
+            --text: #dfe4fe;
+            --text-muted: #a5aac2;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #fff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            background: linear-gradient(to right, #00f1fe, #ac89ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: var(--surface);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        h2 {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .job-title {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .job-company {
+            color: var(--primary);
+        }
+        .job-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 241, 254, 0.4);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .section {
+                background: white;
+                border: none;
+                padding: 10px 0;
+            }
+            h1 {
+                background: none;
+                color: black;
+            }
+            .print-btn {
+                display: none;
+            }
+            .job-title, .skill-category, h2 {
+                color: black;
+            }
+            .job-company {
+                color: #005f64;
+            }
+            ul, .job-meta {
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shashank Goud</h1>
+    <p class="subtitle">Technical Data Scientist & Full Stack Developer</p>
+    
+    <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">
+        Technical Data Scientist with data engineering experience building pipelines in Azure using Databricks, Synapse, Logic Apps, Python, SQL and Spark. Experienced in transforming real-time telemetry and operational data into structured datasets, developing automated data workflows, building monitoring tools, and supporting reporting teams.
+    </p>
+
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <div class="job-title">
+            <span>Mindsett, Cloud FM | <span class="job-company">Data Scientist</span></span>
+            <span>01.2022 – Present</span>
+        </div>
+        <div class="job-meta">Colchester, UK</div>
+        <ul>
+            <li>Built and optimised data pipelines using Azure Synapse, Databricks and Logic Apps, reducing processing time by 40% and increasing insights generation speed by 3x.</li>
+            <li>Developed an asset health algorithm using PF, THD, Z-score and RMS harmonics, improving asset reliability by 30%.</li>
+            <li>Built an Asset Engineer tool using local Ollama models to generate likely symptoms, high-risk components and resolution paths based on asset name.</li>
+            <li>Designed Power BI and Grafana monitoring dashboards, reducing missing-data issues and cutting manual reporting workload by 60%.</li>
+            <li>Implemented energy-usage reports that reduced client consumption by 12.5%.</li>
+        </ul>
+
+        <div style="margin-top: 30px;">
+            <div class="job-title">
+                <span>Reliance Jio Platforms | <span class="job-company">Data Analyst</span></span>
+                <span>10.2020 – 09.2021</span>
+            </div>
+            <div class="job-meta">Mumbai, India</div>
+            <ul>
+                <li>Developed end-to-end data solutions using Scala, Spark and Hive, improving query efficiency by 35%.</li>
+                <li>Implemented Kafka and Apache Flink for real-time data streaming.</li>
+                <li>Automated ETL workflows using Airflow and Python, reducing processing time by 40%.</li>
+            </ul>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <div class="job-title">
+                <span>VEM Tooling | <span class="job-company">Full Stack Developer Intern</span></span>
+                <span>02.2019 – 02.2022</span>
+            </div>
+            <div class="job-meta">Pune, India</div>
+            <ul>
+                <li>Developed & deployed a lightweight Android app (<1.5MB) on the Google Play Store, enhancing mobile accessibility.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <div class="skill-category">Data Processing</div>
+                <ul>
+                    <li>PostgreSQL, InfluxDB</li>
+                    <li>Databricks, Hive, Spark</li>
+                </ul>
+            </div>
+            <div>
+                <div class="skill-category">Programming & Frameworks</div>
+                <ul>
+                    <li>Python, SQL, Scala, R</li>
+                    <li>Kafka, Airflow</li>
+                    <li>React, Tailwind CSS</li>
+                </ul>
+            </div>
+            <div>
+                <div class="skill-category">Data Engineering & Infrastructure</div>
+                <ul>
+                    <li>Azure Synapse, Databricks</li>
+                    <li>Logic Apps</li>
+                    <li>Delta-style Lakehouse workflows</li>
+                </ul>
+            </div>
+            <div>
+                <div class="skill-category">Visualization & Reporting</div>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Grafana</li>
+                    <li>Miro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">Save as PDF</button>
+
+</body>
+</html>
