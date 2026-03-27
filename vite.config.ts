@@ -8,4 +8,16 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    chunkSizeWarningLimit: 600,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('three') || id.includes('@react-three')) {
+            return 'three-vendor';
+          }
+        },
+      },
+    },
+  },
 })

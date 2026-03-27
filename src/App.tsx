@@ -1,9 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { lazy, Suspense, useEffect, useRef } from 'react';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
-import About from './components/About';
-import Background3D from './components/Background3D';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+
+const Background3D = lazy(() => import('./components/Background3D'));
+const Projects = lazy(() => import('./components/Projects'));
+const About = lazy(() => import('./components/About'));
 
 const ScrollWrapper = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -51,7 +52,9 @@ function App() {
     <div className="bg-[var(--color-surface)] min-h-screen font-body text-[var(--color-on-surface)] selection:bg-cyan-500/30 overflow-x-hidden" style={{ perspective: 1200 }}>
       
       {/* 3D Global Environment */}
-      <Background3D />
+      <Suspense fallback={null}>
+        <Background3D />
+      </Suspense>
 
       {/* Progress Bar */}
       <motion.div
@@ -62,10 +65,14 @@ function App() {
       <main>
         <Hero />
         <ScrollWrapper>
-          <About />
+          <Suspense fallback={null}>
+            <About />
+          </Suspense>
         </ScrollWrapper>
         <ScrollWrapper>
-          <Projects />
+          <Suspense fallback={null}>
+            <Projects />
+          </Suspense>
         </ScrollWrapper>
       </main>
 
