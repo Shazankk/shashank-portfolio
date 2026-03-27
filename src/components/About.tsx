@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Database, Code2, Cpu, BrainCircuit } from 'lucide-react';
+import { Database, Code2, Cpu, BrainCircuit, Phone, Mail, MapPin, GraduationCap, Linkedin, Github } from 'lucide-react';
 
 const skills = [
   {
@@ -51,8 +51,44 @@ export default function About() {
               <p className="text-lg text-[var(--color-on-surface-variant)] leading-relaxed">
                 I develop automated data workflows, build monitoring tools, and support reporting teams—while also crafting immersive frontend experiences with React and 3D web technologies.
               </p>
+
+              {/* Contact Details */}
+              <div className="mt-8 space-y-3">
+                <a href="tel:+447825107689" className="flex items-center gap-3 text-[var(--color-on-surface-variant)] hover:text-cyan-300 transition-colors">
+                  <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <span className="text-sm">+44 7825 107689</span>
+                </a>
+                <a href="mailto:shashaankgoud@gmail.com" className="flex items-center gap-3 text-[var(--color-on-surface-variant)] hover:text-cyan-300 transition-colors">
+                  <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <span className="text-sm">shashaankgoud@gmail.com</span>
+                </a>
+                <div className="flex items-center gap-3 text-[var(--color-on-surface-variant)]">
+                  <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <span className="text-sm">Colchester, UK</span>
+                </div>
+                <a href="https://linkedin.com/in/shagodji" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[var(--color-on-surface-variant)] hover:text-cyan-300 transition-colors">
+                  <Linkedin className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <span className="text-sm">linkedin.com/in/shagodji</span>
+                </a>
+                <a href="https://github.com/shazankk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[var(--color-on-surface-variant)] hover:text-cyan-300 transition-colors">
+                  <Github className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <span className="text-sm">github.com/shazankk</span>
+                </a>
+              </div>
+
+              {/* Education */}
+              <div className="mt-8 pt-6 border-t border-white/5">
+                <div className="flex items-center gap-2 mb-3">
+                  <GraduationCap className="w-5 h-5 text-purple-400" />
+                  <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Education</h3>
+                </div>
+                <p className="text-sm text-white font-medium">MSc Data Science & AI</p>
+                <p className="text-xs text-[var(--color-on-surface-variant)]">University of Essex · 2021 – 2022</p>
+                <p className="text-sm text-white font-medium mt-2">B.E. Computer Engineering</p>
+                <p className="text-xs text-[var(--color-on-surface-variant)]">University of Pune · 2016 – 2020</p>
+              </div>
               
-              <div className="mt-10">
+              <div className="mt-8">
                 <a 
                   href="/resume.html" 
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full hover:bg-[var(--color-surface-high)] border border-[var(--color-outline-variant)] text-cyan-300 font-medium transition-colors"

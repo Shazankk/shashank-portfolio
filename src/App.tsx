@@ -77,7 +77,7 @@ function App() {
           <p className="text-[var(--color-on-surface-variant)] mb-10 max-w-lg mx-auto text-lg">
             I'm actively seeking opportunities to bring my unique blend of data engineering depth and frontend polish to a forward-thinking team.
           </p>
-          <a href="mailto:shashank.goud@example.com" className="inline-block px-10 py-4 rounded-full bg-white text-black font-bold text-lg hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_30px_rgba(0,241,254,0.6)] transition-all duration-300 transform hover:-translate-y-2">
+          <a href="mailto:shashaankgoud@gmail.com" className="inline-block px-10 py-4 rounded-full bg-white text-black font-bold text-lg hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_30px_rgba(0,241,254,0.6)] transition-all duration-300 transform hover:-translate-y-2">
             Get In Touch
           </a>
           <div className="mt-16 text-sm text-[var(--color-on-surface-variant)] opacity-50">
