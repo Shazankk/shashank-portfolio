@@ -103,22 +103,29 @@ const ProjectCard = ({ title, description, tags, link, index }: ProjectProps) =>
 export default function Projects() {
   const projects = [
     {
-      title: "Colchester Cavaliers",
-      description: "Official site for Colchester Cavaliers Cricket Club. Features live fixtures, results, player stats, and membership details for the Essex community.",
-      tags: ["React", "TailwindCSS", "Supabase", "Sports Tech"],
-      link: "https://www.colchestercavaliers.cc"
+      title: "Azure Data Pipelines",
+      description: "Built and optimised end-to-end data pipelines using Azure Synapse, Databricks and Logic Apps — reducing processing time by 40% and increasing insights generation speed by 3x.",
+      tags: ["Azure Synapse", "Databricks", "Logic Apps", "Spark", "Python"]
     },
     {
-      title: "AA Motor Medic",
-      description: "Professional car care platform for an Ipswich Car Garage offering MOT testing, diagnostics, and online bookings.",
-      tags: ["Web App", "Frontend", "Booking System"],
-      link: "https://www.aamotormedic.com"
+      title: "Asset Health Algorithm",
+      description: "Developed an asset health scoring system using Power Factor, THD, Z-score and RMS harmonics analysis, improving asset reliability by 30%.",
+      tags: ["Python", "Signal Processing", "Data Science", "IoT"]
     },
     {
-      title: "Gab & Shashank",
-      description: "Bespoke international wedding website for a 2027 celebration in Kraków, Poland, with custom RSVP and scheduling.",
-      tags: ["React", "Custom UI", "Internationalization"],
-      link: "https://www.gabandshashank.com"
+      title: "Asset Engineer AI Tool",
+      description: "Built an AI-powered diagnostic tool using local Ollama models to generate likely symptoms, high-risk components and resolution paths based on asset name.",
+      tags: ["Ollama", "LLM", "Python", "AI Agents"]
+    },
+    {
+      title: "Monitoring Dashboards",
+      description: "Designed Power BI and Grafana dashboards for pipeline monitoring and energy reporting — reducing missing-data issues and cutting manual reporting workload by 60%.",
+      tags: ["Power BI", "Grafana", "InfluxDB", "Data Visualization"]
+    },
+    {
+      title: "Real-time Streaming Platform",
+      description: "Implemented Kafka and Apache Flink for real-time data streaming at Reliance Jio, with end-to-end ETL using Scala, Spark, Hive and Airflow.",
+      tags: ["Kafka", "Flink", "Scala", "Spark", "Airflow"]
     },
     {
       title: "Enterprise Knowledge Tree",
@@ -126,9 +133,16 @@ export default function Projects() {
       tags: ["Data Visualization", "D3.js", "SQL", "Data Engineering"]
     },
     {
-      title: "Azure Synapse Logic Apps",
-      description: "Automated logic apps for comprehensive pipeline monitoring and telemetry data extraction in Azure Synapse Analytics workspaces.",
-      tags: ["Azure", "Synapse", "Data Engineering", "Logic Apps"]
+      title: "Colchester Cavaliers",
+      description: "Official site for Colchester Cavaliers Cricket Club. Features live fixtures, results, player stats, and membership details for the Essex community.",
+      tags: ["React", "TailwindCSS", "Supabase", "Sports Tech"],
+      link: "https://www.colchestercavaliers.cc"
+    },
+    {
+      title: "Gab & Shashank",
+      description: "Bespoke international wedding website for a 2027 celebration in Kraków, Poland, with custom RSVP and scheduling.",
+      tags: ["React", "Custom UI", "Internationalization"],
+      link: "https://www.gabandshashank.com"
     }
   ];
 
@@ -140,13 +154,13 @@ export default function Projects() {
             Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">Initiatives</span>
           </h2>
           <p className="text-lg text-[var(--color-on-surface-variant)]">
-            Bridging data engineering and frontend development to create scalable, intelligent, and beautifully designed digital experiences.
+            Data engineering pipelines, AI tools, and monitoring systems — alongside web projects built for real clients.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={project.title} className={index === 0 || index === 3 ? "lg:col-span-2" : "col-span-1"}>
+            <div key={project.title} className={index === 0 || index === 5 ? "lg:col-span-2" : "col-span-1"}>
               <ProjectCard {...project} index={index} />
             </div>
           ))}

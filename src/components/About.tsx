@@ -3,24 +3,24 @@ import { Database, Code2, Cpu, BrainCircuit } from 'lucide-react';
 
 const skills = [
   {
-    category: "Data Engineering & Analytics",
+    category: "Data Processing",
     icon: <Database className="w-6 h-6 text-cyan-400" />,
-    items: ["Azure Synapse Analytics", "SQL Configuration & Optimization", "Data Pipelines (Logic Apps)", "Upstream & Downstream Processing"]
+    items: ["PostgreSQL & InfluxDB", "Databricks & Apache Spark", "Hive & Data Warehousing", "Real-time Telemetry Processing"]
   },
   {
-    category: "Frontend Development",
+    category: "Programming & Frameworks",
     icon: <Code2 className="w-6 h-6 text-purple-400" />,
-    items: ["React & Next.js", "TailwindCSS & Framer Motion", "WebGL & React Three Fiber", "Responsive UI Architecture"]
+    items: ["Python, SQL, Scala & R", "Kafka & Apache Flink", "Airflow & ETL Automation", "React & Tailwind CSS"]
   },
   {
-    category: "AI & Data Science",
+    category: "Data Engineering & Infrastructure",
     icon: <BrainCircuit className="w-6 h-6 text-pink-400" />,
-    items: ["Google AI Studio & Vertex", "Agentic Development Kits", "Prompt Engineering (Claude, ChatGPT)", "Predictive Modeling"]
+    items: ["Azure Synapse Analytics", "Databricks & Logic Apps", "Delta-style Lakehouse Workflows", "Automated Data Pipelines"]
   },
   {
-    category: "Tools & Infrastructure",
+    category: "Visualization & Reporting",
     icon: <Cpu className="w-6 h-6 text-emerald-400" />,
-    items: ["Git & CI/CD workflows", "Serverless Architecture", "Cloud Integrations", "Figma & UI Design tools"]
+    items: ["Power BI Dashboards", "Grafana Monitoring", "Miro & Workflow Diagrams", "Energy & Asset Reporting"]
   }
 ];
 
@@ -46,10 +46,10 @@ export default function About() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Architect</span>
               </h2>
               <p className="text-lg text-[var(--color-on-surface-variant)] leading-relaxed mb-6">
-                I am a Data Scientist and Data Engineer who thrives at the intersection of complex backend architecture and stunning frontend design. I believe data shouldn't just be processed—it should be experienced.
+                Technical Data Scientist with data engineering experience building pipelines in Azure using Databricks, Synapse, Logic Apps, Python, SQL and Spark. Experienced in transforming real-time telemetry and operational data into structured datasets.
               </p>
               <p className="text-lg text-[var(--color-on-surface-variant)] leading-relaxed">
-                Whether I'm mapping enterprise data relations via advanced bubble maps, building responsive web apps with React, or deploying intelligent AI agents, my goal is to deliver clarity, performance, and aesthetic excellence.
+                I develop automated data workflows, build monitoring tools, and support reporting teams—while also crafting immersive frontend experiences with React and 3D web technologies.
               </p>
               
               <div className="mt-10">

@@ -30,8 +30,8 @@ export default function Hero() {
               Data Engineer | Data Scientist | Web Developer
             </p>
             <p className="text-md md:text-lg text-[var(--color-on-surface-variant)] opacity-80 max-w-xl">
-              Bringing complex data architectures to life through fluid, state-of-the-art interactive interfaces. 
-              Specializing in Azure Synapse, AI Agentic Development, and immersive web experiences.
+              Building data pipelines in Azure using Databricks, Synapse & Spark — transforming real-time telemetry 
+              into structured datasets, automated workflows, and monitoring tools.
             </p>
           </motion.div>
 
